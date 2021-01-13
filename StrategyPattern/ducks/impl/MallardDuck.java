@@ -2,9 +2,9 @@ package StrategyPattern.ducks.impl;
 
 import StrategyPattern.behaviors.fly.impl.FlyWithWings;
 import StrategyPattern.behaviors.quack.impl.Quack;
-import StrategyPattern.ducks.IDuck;
+import StrategyPattern.ducks.Duck;
 
-public class MallardDuck extends IDuck {
+public class MallardDuck extends Duck {
 
   public MallardDuck() {
     flyBehavior = new FlyWithWings();

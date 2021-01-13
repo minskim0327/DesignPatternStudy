@@ -3,11 +3,16 @@ package StrategyPattern.ducks;
 import StrategyPattern.behaviors.fly.IFlyBehavior;
 import StrategyPattern.behaviors.quack.IQuackBehavior;
 
-public abstract class IDuck {
+public abstract class Duck {
   protected IFlyBehavior flyBehavior;
   protected IQuackBehavior quackBehavior;
 
-  public IDuck() {
+  public Duck() {
+  }
+
+  public Duck(IFlyBehavior fb, IQuackBehavior qb) {
+    this.flyBehavior = fb;
+    this.quackBehavior = qb;
   }
 
   public void setFlyBehavior(IFlyBehavior fb) {
